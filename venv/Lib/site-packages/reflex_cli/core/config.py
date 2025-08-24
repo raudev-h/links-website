@@ -143,7 +143,7 @@ class Config:
     vmtype: VmType | None = dataclasses.field(default=None)
     regions: dict[RegionOption, int] | None = dataclasses.field(default=None)
     hostname: str | None = dataclasses.field(default=None)
-    envfile: str = dataclasses.field(default=".env")
+    envfile: str | None = dataclasses.field(default=None)
     project: str | None = dataclasses.field(default=None)
     packages: list[str] = dataclasses.field(default_factory=list)
     appid: str | None = dataclasses.field(default=None)
